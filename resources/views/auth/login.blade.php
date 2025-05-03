@@ -233,7 +233,7 @@
     <div class="login-card animate__animated animate__fadeIn">
         <div class="card-header">
             <h1 class="card-title floating">
-                <i class="fas fa-user-shield me-2"></i>Welcome Back
+                <i class="fas fa-user-shield me-2"></i>Login
             </h1>
         </div>
         <div class="card-body">
