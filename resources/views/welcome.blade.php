@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>giveaway.pet</title>
+    <title>opawra.pet</title>
 
     <meta name="keywords" content="fairy-free.com">
 
@@ -774,10 +774,10 @@
 
                                                 {{-- @include('filebutton') --}}
 
-                                                <input type="file" id="file" class="file-input" onchange="displayFileName()" name="pic" required>
-                                                <label for="file" class="file-label">
+                                                <label for="file" class="file-labe">
                                                     📁 Choose File
                                                     <span class="text">Upload Your Review Screenshot</span>
+                                                    <input type="file" id="file" class="file-inpu" onchange="displayFileName()" name="pic" required>
                                                 </label>
                                                 <div class="file-name" id="file-name">No file chosen</div>
 
