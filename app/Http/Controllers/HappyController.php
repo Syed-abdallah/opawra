@@ -22,6 +22,7 @@ class HappyController extends Controller
             'amazon_name' => 'required|string',
             'shippingAddress' => 'required|string',
             'pic' => 'nullable|image|mimes:jpg,jpeg,png',
+            'captcha' => 'required|captcha',
         ]);
 
         // Create a new Order instance

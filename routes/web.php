@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UnhappyController;
 use App\Http\Controllers\HappyController;
 use App\Http\Controllers\EmailSendController;
+use App\Http\Controllers\CacheController;
 use App\Models\Happy;
 use App\Models\Review;
 use App\Models\Unhappy;
@@ -25,8 +26,15 @@ Route::get('/', function () {
     $link = $links ? $links->link : "";
     return view('welcome', compact( 'link'));
 // });
+
+// Route::route('/reload-captcha',[CacheController::class, 'reloadCaptcha']);
+
 })->middleware('country.restrict');
 
+Route::get('/reloadcaptcha', function() {
+
+    return response()->json(['captcha'=> captcha_img('flat')]);
+});
 Route::get('/dashboard', function () {
     $happy = Happy::latest()->get(); 
  
