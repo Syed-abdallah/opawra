@@ -198,8 +198,7 @@
                                             Order ID</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control order order-input"
-                                                id="inputorderID01" placeholder="xxx-xxxxxxx-xxxxxxxx" value=""
-                                                name="amazon_id">
+                                                id="inputorderID01" value="" name="amazon_id">
 
 
                                         </div>
@@ -234,6 +233,31 @@
                                     </div>
                                     <div class="text-center tshi" style="clear: both; color: rgb(244, 67, 54);">Please
                                         input name, email address.</div>
+
+                                    <div class="form-group row">
+
+                                        <label for="inputAddress" class="col-sm-2 col-form-label  text-right">
+                                            Captcha</label>
+
+                                        <div class="col-sm-10">
+                                            <div class="captcha-container mb-2">
+                                                <span class="captcha-image">{!! captcha_img('flat') !!}</span>
+                                                &nbsp;
+                                                <button type="button" class="btn btn-outline-danger btn-reload"
+                                                    id="reload-captcha-fullyfunded">
+                                                    &#x21bb;
+                                                </button>
+                                            </div>
+                                            <input type="text"
+                                                class="form-control @error('captcha') is-invalid @enderror"
+                                                id="captcha" name="captcha" placeholder="Enter CAPTCHA" required>
+                                            @error('captcha')
+                                                <div class="invalid-feedback">
+                                                    {{ $message }}
+                                                </div>
+                                            @enderror
+                                        </div>
+                                    </div>
 
                                     <button type="submit" class="btn btn-primary float-right">Submit</button>
                                 </form>
@@ -304,8 +328,7 @@
                                             Order ID</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control order order-input"
-                                                id="inputorderID02" value="" name="amazon_id"
-                                                placeholder="xxx-xxxxxxx-xxxxxxxx">
+                                                id="inputorderID02" value="" name="amazon_id">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -347,6 +370,30 @@
                                     </div>
                                     <div class="text-center tshi" style="clear: both; color: rgb(244, 67, 54);">Please
                                         input shipping address, name, email address.</div>
+                                    <div class="form-group row">
+
+                                        <label for="inputAddress" class="col-sm-2 col-form-label  text-right">
+                                            Captcha</label>
+
+                                        <div class="col-sm-10">
+                                            <div class="captcha-container mb-2">
+                                                <span class="captcha-image">{!! captcha_img('flat') !!}</span>
+                                                &nbsp;
+                                                <button type="button" class="btn btn-outline-danger btn-reload"
+                                                    id="reload-captcha-GetReplacemet">
+                                                    &#x21bb;
+                                                </button>
+                                            </div>
+                                            <input type="text"
+                                                class="form-control @error('captcha') is-invalid @enderror"
+                                                id="captcha" name="captcha" placeholder="Enter CAPTCHA" required>
+                                            @error('captcha')
+                                                <div class="invalid-feedback">
+                                                    {{ $message }}
+                                                </div>
+                                            @enderror
+                                        </div>
+                                    </div>
                                     <button type="submit" class="btn btn-primary float-right">Submit</button>
                                 </form>
 
@@ -459,7 +506,7 @@
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control order-input"
                                                 id="inputorderID03" name="amazon_id"
-                                                placeholder="xxx-xxxxxxx-xxxxxxxx">
+                                               >
                                         </div>
                                     </div>
 
@@ -529,7 +576,30 @@
                                     {{-- <div class="text-center text-danger mt-3">
                                         Please input name, email address.
                                     </div> --}}
+  <div class="form-group row">
 
+                                        <label for="inputAddress" class="col-sm-2 col-form-label  text-right">
+                                            Captcha</label>
+
+                                        <div class="col-sm-10">
+                                            <div class="captcha-container mb-2">
+                                                <span class="captcha-image">{!! captcha_img('flat') !!}</span>
+                                                &nbsp;
+                                                <button type="button" class="btn btn-outline-danger btn-reload"
+                                                    id="reload-captcha-amazongift">
+                                                    &#x21bb;
+                                                </button>
+                                            </div>
+                                            <input type="text"
+                                                class="form-control @error('captcha') is-invalid @enderror"
+                                                id="captcha" name="captcha" placeholder="Enter CAPTCHA" required>
+                                            @error('captcha')
+                                                <div class="invalid-feedback">
+                                                    {{ $message }}
+                                                </div>
+                                            @enderror
+                                        </div>
+                                    </div>
                                     <!-- Submit Button -->
                                     <button type="submit" class="btn btn-primary float-right mt-3">Submit</button>
                                 </form>
@@ -626,7 +696,30 @@
                                         </div>
                                         <div class="text-center tshi" style="clear: both; color: rgb(244, 67, 54);">
                                             Please input name, email address.</div>
+  <div class="form-group row">
 
+                                        <label for="inputAddress" class="col-sm-2 col-form-label  text-right">
+                                            Captcha</label>
+
+                                        <div class="col-sm-10">
+                                            <div class="captcha-container mb-2">
+                                                <span class="captcha-image">{!! captcha_img('flat') !!}</span>
+                                                &nbsp;
+                                                <button type="button" class="btn btn-outline-danger btn-reload"
+                                                    id="reload-captcha-other">
+                                                    &#x21bb;
+                                                </button>
+                                            </div>
+                                            <input type="text"
+                                                class="form-control @error('captcha') is-invalid @enderror"
+                                                id="captcha" name="captcha" placeholder="Enter CAPTCHA" required>
+                                            @error('captcha')
+                                                <div class="invalid-feedback">
+                                                    {{ $message }}
+                                                </div>
+                                            @enderror
+                                        </div>
+                                    </div>
                                         <button type="submit" class="btn btn-primary float-right">Submit</button>
 
                                     </form>
@@ -916,7 +1009,7 @@
 
 
 
-  <div class="form-group row">
+                                   <div class="form-group row">
 
                                         <label for="inputAddress" class="col-sm-2 col-form-label  text-right">
                                             Captcha</label>
@@ -933,12 +1026,11 @@
                                    id="captcha" name="captcha" placeholder="Enter CAPTCHA" required>
                             @error('captcha')
     <div class="invalid-feedback">
-                                                {{ $message }}
-                                            </div>
+                                                                {{ $message }}
+                                                            </div>
 @enderror
-                        </div>
-
-                                        </div>
+                                           </div>
+                            </div>
 
                                  
 
@@ -1170,6 +1262,138 @@
                     complete: function() {
                         $('#reload-captcha').prop('disabled', false);
                         $('#reload-captcha i').removeClass('fa-spin');
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            console.log("✅ jQuery is ready!");
+            // Set up CSRF token for AJAX requests
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            // CAPTCHA reload button
+            $('#reload-captcha-fullyfunded').click(function() {
+                $.ajax({
+                    type: 'GET',
+                    url: '/reloadcaptcha',
+                    beforeSend: function() {
+                        $('#reload-captcha-fullyfunded').prop('disabled', true);
+                        $('#reload-captcha-fullyfunded i').addClass('fa-spin');
+                    },
+                    success: function(data) {
+                        $('.captcha-image').html(data.captcha);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error reloading CAPTCHA:', error);
+                    },
+                    complete: function() {
+                        $('#reload-captcha-fullyfunded').prop('disabled', false);
+                        $('#reload-captcha-fullyfunded i').removeClass('fa-spin');
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            console.log("✅ jQuery is ready!");
+            // Set up CSRF token for AJAX requests
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            // CAPTCHA reload button
+            $('#reload-captcha-GetReplacemet').click(function() {
+                $.ajax({
+                    type: 'GET',
+                    url: '/reloadcaptcha',
+                    beforeSend: function() {
+                        $('#reload-captcha-GetReplacemet').prop('disabled', true);
+                        $('#reload-captcha-GetReplacemet i').addClass('fa-spin');
+                    },
+                    success: function(data) {
+                        $('.captcha-image').html(data.captcha);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error reloading CAPTCHA:', error);
+                    },
+                    complete: function() {
+                        $('#reload-captcha-GetReplacemet').prop('disabled', false);
+                        $('#reload-captcha-GetReplacemet i').removeClass('fa-spin');
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            console.log("✅ jQuery is ready!");
+            // Set up CSRF token for AJAX requests
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            // CAPTCHA reload button
+            $('#reload-captcha-amazongift').click(function() {
+                $.ajax({
+                    type: 'GET',
+                    url: '/reloadcaptcha',
+                    beforeSend: function() {
+                        $('#reload-captcha-amazongift').prop('disabled', true);
+                        $('#reload-captcha-amazongift i').addClass('fa-spin');
+                    },
+                    success: function(data) {
+                        $('.captcha-image').html(data.captcha);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error reloading CAPTCHA:', error);
+                    },
+                    complete: function() {
+                        $('#reload-captcha-amazongift').prop('disabled', false);
+                        $('#reload-captcha-amazongift i').removeClass('fa-spin');
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            console.log("✅ jQuery is ready!");
+            // Set up CSRF token for AJAX requests
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            // CAPTCHA reload button
+            $('#reload-captcha-other').click(function() {
+                $.ajax({
+                    type: 'GET',
+                    url: '/reloadcaptcha',
+                    beforeSend: function() {
+                        $('#reload-captcha-other').prop('disabled', true);
+                        $('#reload-captcha-other i').addClass('fa-spin');
+                    },
+                    success: function(data) {
+                        $('.captcha-image').html(data.captcha);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error reloading CAPTCHA:', error);
+                    },
+                    complete: function() {
+                        $('#reload-captcha-other').prop('disabled', false);
+                        $('#reload-captcha-other i').removeClass('fa-spin');
                     }
                 });
             });

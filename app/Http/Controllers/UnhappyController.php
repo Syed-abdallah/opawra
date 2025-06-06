@@ -20,6 +20,7 @@ class UnhappyController extends Controller
             'email' => 'required|email',
             'name' => 'required|string',
             'shipping_address' => 'nullable',
+            // 'captcha' => 'required|captcha',
         ]);
 
         $order = new Unhappy();
