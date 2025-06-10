@@ -203,14 +203,14 @@
 
                                         </div>
                                     </div>
-                                    <div class="form-group row">
+                                    {{-- <div class="form-group row">
                                         <div class="col-sm-3 col-1"></div>
                                         <label class="col-sm-9 col-11 mb-0" for="noid">
                                             <input class="form-check-input ml-2" type="checkbox" id="noid01"
                                                 value="no id" name="noid">
                                             <span class="ml-2">I don’t know my order ID</span>
                                         </label>
-                                    </div>
+                                    </div> --}}
                                     <div class="form-group row">
                                         <label for="inputName"
                                             class="col-sm-3 col-form-label  text-right">Name</label>
@@ -331,14 +331,14 @@
                                                 id="inputorderID02" value="" name="amazon_id">
                                         </div>
                                     </div>
-                                    <div class="form-group row">
+                                    {{-- <div class="form-group row">
                                         <div class="col-sm-3 col-1"></div>
                                         <label class="col-sm-9 col-11 mb-0" for="noid">
                                             <input class="form-check-input ml-2" type="checkbox" id="noid02"
                                                 name="noid" value="no id">
                                             <span class="ml-2">I don’t know my order ID</span>
                                         </label>
-                                    </div>
+                                    </div> --}}
                                     <div class="form-group row">
                                         <label for="inputAddress" class="col-sm-3 col-form-label text-right">Shipping
                                             Address</label>
@@ -511,14 +511,14 @@
                                     </div>
 
                                     <!-- Checkbox -->
-                                    <div class="form-group row">
+                                    {{-- <div class="form-group row">
                                         <div class="col-sm-3"></div>
                                         <label class="col-sm-9">
                                             <input class="form-check-input" type="checkbox" id="noid03"
                                                 name="noid" value="no id">
                                             <span class="ml-2">I don’t know my order ID</span>
                                         </label>
-                                    </div>
+                                    </div> --}}
 
                                     <!-- Name -->
                                     <div class="form-group row mt-3">
