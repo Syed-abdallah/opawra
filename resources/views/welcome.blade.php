@@ -198,7 +198,7 @@
                                             Order ID</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control order order-input"
-                                                id="inputorderID01" value="" name="amazon_id">
+                                                id="inputorderID01" value="" name="amazon_id" required>
 
 
                                         </div>
@@ -328,7 +328,7 @@
                                             Order ID</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control order order-input"
-                                                id="inputorderID02" value="" name="amazon_id">
+                                                id="inputorderID02" value="" name="amazon_id" required>
                                         </div>
                                     </div>
                                     {{-- <div class="form-group row">
@@ -505,8 +505,8 @@
                                             Order ID</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control order-input"
-                                                id="inputorderID03" name="amazon_id"
-                                               >
+                                                id="inputorderID03" name="amazon_id "
+                                               required>
                                         </div>
                                     </div>
 
